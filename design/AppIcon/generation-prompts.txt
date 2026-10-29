@@ -1,0 +1,18 @@
+Generation mode: built-in image_gen; no CLI/API fallback.
+Approved reference: approved-concept.png (concept 3, Coffee Ripples).
+Accepted output: 01-Cup.png, transparent RGBA, 1254 x 1254 pixels.
+
+Final foreground prompt
+
+Use case: background-extraction. Edit target: the attached approved Crema app icon concept. Produce the reusable transparent foreground artwork for Apple's Icon Composer. Preserve exactly the existing top-down ivory ceramic espresso cup, right-hand handle, caramel coffee, and its three curved cream-colored sound-wave marks. Preserve its silhouette, warm palette, materials and art direction; this is the selected design, not a new proposal. Remove the dark brown rounded-square tile completely, remove the outer pale presentation background completely, and remove all cast shadow outside the cup. Everything outside the cup and handle must be genuinely transparent alpha, with clean antialiased edges, no dark halo, and no fake checkerboard. Keep natural shading within the cup and ceramic rim. The canvas should be square 1024 x 1024, with the cup and handle centered as a whole and occupying approximately 75 percent of its width. Leave generous transparent padding on all four edges, no clipping. Refine only the coffee texture to be a little smoother and less noisy so the three broad cream arcs remain recognizable at small icon sizes. Do not add a background, tile, mask, border, lettering, text, new symbol, extra cup, shadow outside the cup, or watermark. Deliver only this single transparent cup asset.
+
+Final Icon Composer composition
+
+Source: ../../Crema/AppIcon.icon
+Background: automatic gradient based on sRGB #322820.
+Foreground scale: 80%; translation: (15, 0) points on the 1024-point canvas.
+The foreground was moved 40 points to the right after the user's optical-centering feedback.
+Group shadow: neutral, 22%; translucency disabled.
+Mono appearance: outside specular highlights.
+The native background and raster foreground are separate. The ceramic, coffee, and crema marks remain together in one raster layer.
+Icon Composer supplies the platform mask and material rendering. The Xcode app target uses AppIcon.
